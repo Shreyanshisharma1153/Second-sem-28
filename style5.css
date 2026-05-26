@@ -1,0 +1,137 @@
+
+body{
+  margin:0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background:var(--bg);
+  color: rgb(139, 20, 72);
+}
+
+.header{
+  text-align:center;
+  padding:40px 20px 10px;
+}
+
+.header h1{
+  margin:0;
+  font-size:40px;
+  font-weight:800;
+  color:hwb(107 3% 26%);
+}
+
+.container{
+  max-width:1150px;
+  margin:30px auto;
+  padding:0 14px 60px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:26px;
+}
+
+/* product card */
+.card:hover{
+    transform: scale(95%);
+    background-color: pink;
+}
+.card{
+    background-color: #c97885;
+  background:var(--card);
+  border-radius:10px;
+  padding:18px;
+  box-shadow:0 6px 18px #a66728d1;
+  border:1px solid #176dbeba;
+  display:flex;
+  flex-direction:column;
+  min-height:420px;
+}
+
+.card .imgwrap{
+  height:190px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-bottom:14px;
+}
+
+.card img{
+  max-height:160px;
+  max-width:100%;
+  object-fit:contain;
+  border-radius:8px;
+  background:blue;
+}
+
+.card h3{
+  font-size:18px;
+  margin:6px 8px;
+  text-align:center;
+  color:black;
+  font-weight:700;
+}
+
+.card p.desc{
+  margin:8px 18px;
+  font-size:13px;
+  color:rgb(17, 4, 4);
+  text-align:center;
+  line-height:1.45;
+}
+
+.buyrow{
+  margin-top:auto;
+  text-align:center;
+  padding-bottom:8px;
+  
+}
+
+.price{
+  font-weight:750;
+  color:var(--price);
+  margin:8px 0 12px;
+  color:red;}
+
+
+
+}
+.btn:hover{
+    transform: scale(1.05);
+    background-color: lightblue;
+}
+
+@media (max-width:1000px){
+  .container{
+    grid-template-columns:repeat(2,1fr);
+    max-width:900px;
+  }
+}
+
+@media (max-width:560px){
+  .container{
+    grid-template-columns:1fr;
+    padding:0 8px;
+  }
+
+  .header h1{
+    font-size:28px;
+  }
+
+  .card{
+    min-height:360px;
+  }
+}
+h1{
+    color:rgb(103, 32, 218);
+    text-decoration: double;
+    font-family: cursive;
+    
+}
+h3{
+    color:rgb(255, 173, 184);
+    font-size: large;
+    background-color: burlywood;
+    font-family: cursive;
+}
+h2{
+    color:aqua;
+    font-size: large;
+    background-color: darkgreen;
+}
